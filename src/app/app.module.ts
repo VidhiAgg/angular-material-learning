@@ -6,18 +6,24 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button"
 import {MatIconModule} from "@angular/material/icon"
+import {MatFormFieldModule} from "@angular/material/form-field";
+import { BookingComponent } from './componemts/booking/booking.component'
+import { MaterialModule } from './material/material.module';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatIconModule
+
+    MaterialModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
